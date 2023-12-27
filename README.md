@@ -12,3 +12,4 @@ La idea es que los datos recabados en la app web que se está desarrollando, se 
 - En la tercera página (finish.html), el weis quiere que se despliegue un listado de los ambientes que se marcaron en el formulario de index.html
     - si en la página principal puse que tiene 2 dormitorios y 1 baño, acá tendría que mostrar casillas de 2 dormitorios y 1 baño
         - PREGUNTAR AL WEIS
+- En la parte que el cliente puntúa el inmbueble ponerle estrellas (ver emercado de JaP)
