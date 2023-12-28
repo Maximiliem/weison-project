@@ -89,3 +89,109 @@
 </body>
 
 </html>
+
+<!-- CÓDIGO HTML SPA DINÁMICA
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi SPA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mi SPA</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="cargarInicio()">Inicio</a></li>
+        <li><a href="#" onclick="cargarAcerca()">Acerca de</a></li>
+        <li><a href="#" onclick="cargarContacto()">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="contenido">
+     Aquí se cargará el contenido dinámico 
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Mi SPA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+-->
+
+<!-- CSS DINÁMICO
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+#contenido {
+  padding: 2em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+-->
+
+<!-- JAVASCRIPT DINÁMICO SPA
+
+    function cargarInicio() {
+  document.getElementById('contenido').innerHTML = '<h2>Bienvenido a la página de inicio</h2><p>Este es un contenido dinámico para la página de inicio.</p>';
+}
+
+function cargarAcerca() {
+  document.getElementById('contenido').innerHTML = '<h2>Acerca de nosotros</h2><p>Somos una página web SPA con contenido dinámico.</p>';
+}
+
+function cargarContacto() {
+  document.getElementById('contenido').innerHTML = '<h2>Contacto</h2><p>Puedes contactarnos en <a href="mailto:info@mi-spa.com">info@mi-spa.com</a>.</p>';
+}
+
+// Cargar contenido inicial
+cargarInicio();
+
+-->
+
+<!-- COMENTARIOS SOBRE EL CÓDIGO EN GENERAL
+
+-El menú de navegación permite cambiar el contenido dinámicamente haciendo clic en los enlaces.
+-Se utilizan funciones JavaScript (cargarInicio(), cargarAcerca(), cargarContacto()) para cambiar el contenido en el área designada.
+-No es necesario un servidor o tecnologías del lado del servidor para este ejemplo, ya que todo el contenido se carga y manipula en el navegador del usuario.
+
+-->
