@@ -74,29 +74,5 @@ function cargarInicio() {
     document.getElementById('linkInicio').classList.add('active');
 }
 
-function cargarAcerca() {
-    document.getElementById('contenido').innerHTML = '<h2>Acerca de nosotros</h2><p>Somos una página web SPA con contenido dinámico.</p>';
-
-    // Quitar la clase 'active' de todos los enlaces
-    document.getElementById('linkForm2').classList.remove('active');
-
-    document.getElementById('linkInicio').classList.remove('active');
-
-    // Agregar la clase 'active' al enlace 'Inicio'
-    document.getElementById('linkForm1').classList.add('active');
-}
-
-function cargarContacto() {
-    document.getElementById('contenido').innerHTML = '<h2>Contacto</h2><p>Puedes contactarnos en <a href="mailto:maximiliem.dev@gmail.com">maximiliem.dev@gmail.com</a>.</p>';
-
-    // Quitar la clase 'active' de todos los enlaces
-    document.getElementById('linkForm1').classList.remove('active');
-
-    document.getElementById('linkInicio').classList.remove('active');
-
-    // Agregar la clase 'active' al enlace 'Inicio'
-    document.getElementById('linkForm2').classList.add('active');
-}
-
 // Cargar contenido inicial
 cargarInicio();
