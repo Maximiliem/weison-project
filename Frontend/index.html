@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" databs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     
     <header>
         <!--Acá va el NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand">Weisz Project</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="clientform.html">Formulario Cliente</a>
+                    <a class="nav-link" href="clientform.html">Formulario visita</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="thirdpage.html">Tercera página</a>
+                    <a class="nav-link" href="thirdpage.html">Listado</a>
                   </li>
                 </ul>
               </div>
@@ -33,48 +33,61 @@
           </nav>
     </header>
 
-    <!--Acá va el primer formulario-->
+    <!--Acá va el Form 1-->
     <form class="row g-3">
       <div class="col-md-12">
-        <label for="inputAgentName" class="form-label">Nombre del agente</label>
-        <input type="text" class="form-control" id="inputAgentName">
+        <label for="inputAgentName" class="form-label h4">Nombre del agente</label>
+        <input type="text" class="form-control" id="inputAgentName" placeholder="Weisz Rubianes">
       </div>
+      <br>
+      <h3>Datos del inmueble</h3>
+
       <div class="col-md-4">
         <label for="inputDormitorio1" class="form-label">Dormitorios</label>
-        <input type="number" class="form-control" id="inputDormitorio1" placeholder="1">
+        <input type="number" class="form-control" id="inputDormitorio1" placeholder="Cantidad de dormitorios">
       </div>
       <div class="col-md-4">
         <label for="inputCocina1" class="form-label">Cocina</label>
-        <input type="number" class="form-control" id="inputCocina1" placeholder="1">
+        <input type="number" class="form-control" id="inputCocina1" placeholder="Cantidad de cocinas">
       </div>
       <br>
       <div class="col-md-4">
-        <label for="inputAddress2" class="form-label">Living</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="1">
+        <label for="inputLiving1" class="form-label">Living</label>
+        <input type="number" class="form-control" id="inputLiving1" placeholder="Cantidad de livings">
       </div>
       <div class="col-md-4">
-        <label for="inputCity" class="form-label">Patio</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <br>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">Frente</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputZip" class="form-label">Fondo</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-12">
-        <div class="form-check">
+        <label for="inputPatios1" class="form-label">Patios</label>
+        <input type="number" class="form-control" id="inputPatios1" placeholder="Cantidad de patios">
+
+        <div class="col-md-4">
           <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+            <label class="form-check-label" for="gridCheck">
+              Frente
+            </label>
+        </div>
+        <div class="col-md-4">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Fondo
+            </label>
         </div>
       </div>
+      <br>
+      <div class="col-md-4">
+        <label for="inputCocheras1" class="form-label">Cocheras</label>
+        <input type="number" class="form-control" id="inputCocheras1" placeholder="Cantidad de cocheras">
+      </div>
+      <div class="col-md-4">
+        <label for="inputBaños1" class="form-label">Baños</label>
+        <input type="number" class="form-control" id="inputBaños1" placeholder="Cantidad de baños">
+      </div>
+      
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <label for="inputAdress1" class="form-label">Dirección del inmueble</label>
+        <input type="text" class="form-control" id="inputAdress1" placeholder="Ej. Av. Brasil 3008">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Listo</button>
       </div>
     </form>
 
