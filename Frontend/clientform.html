@@ -14,7 +14,7 @@
 
   <header>
     <!--Acá va el NAVBAR-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Weisz Project</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,7 +25,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
+            </li>        
             <li class="nav-item">
               <a class="nav-link active" href="clientform.html">Formulario visita</a>
             </li>
@@ -42,11 +42,11 @@
   <form class="row g-3">
     <h4>Formulario visita</h4>
     <!--INICIO FORM 2-->
-    <div class="col-md-4">
+    <div class="col-4">
       <label for="inputName2" class="form-label">Nombre</label>
       <input type="text" class="form-control" id="inputName2">
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       <label for="inputLastname2" class="form-label">Apellido</label>
       <input type="text" class="form-control" id="inputLastname2">
     </div>
@@ -55,14 +55,14 @@
       <input type="text" class="form-control" id="inputPhone2" placeholder="Ingrese su número de teléfono">
     </div>
     <div class="col-4">
-      <label for="exampleInputEmail1">Email</label>
+      <label for="inputEmail2">Email</label>
       <input type="email" class="form-control" id="inputEmail2" placeholder="Introduzca su email">
     </div>
     <div class="col-4">
       <label for="inputDate2" class="form-label">Fecha de nacimiento</label>
       <input type="date" class="form-control" id="inputDate2">
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       <label for="inputInfo2" class="form-label">Por dónde recibe información</label>
       <select id="inputInfo2" class="form-select">
         <option selected disabled hidden>Elija una opción...</option>
@@ -70,9 +70,15 @@
         <option>Mail</option>
       </select>
     </div>
-    <br><br>  
+    <br>
     <!--FIN FORM 2-->
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Listo</button>
+    </div>
+  </form>
+  <br><br><br>
 
+  <form class="row g-3">
     <!--ACÁ VA EL FORM 3 EN DONDE LOS DATOS OBTENIDOS SON PARA RELLENAR LA HOJA DE VISITA EN PDF-->
     <h4>Hoja de visita</h4>
     <div class="col-4">
@@ -87,11 +93,27 @@
       <label for="inputTimeOut2" class="form-label">Hora de salida</label>
       <input type="time" name="timeOut2" id="inputTimeOut2" class="form-control">
     </div>
-
-
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Listo</button>
+    <div class="col-4">
+      <label for="" class="form-label">Dirección del inmueble</label>
+      <input type="" name="inmuebleAddress" id="inmuebleAddress" class="form-control">
     </div>
+    <div class="col-4">
+      <label for="inmuebleZone" class="form-label">Zona</label>
+      <input type="text" name="inmuebleZone" id="inmuebleZone" class="form-control">
+    </div>
+    <div class="col-4">
+      <label for="inmuebleLocalidad" class="form-label">Localidad</label>
+      <input type="text" name="inmuebleLocalidad" id="inmuebleLocalidad" class="form-control">
+    </div>
+    <div class="col-4">
+      <label for="" class="form-label">Nombre completo</label>
+      <input type="" name="fullNameClient" id="fullNameClient" class="form-control"> <!--EL INPUT ESTE SE TOMA DE FORM 2-->
+    </div>
+    <div class="col-4">
+      <label for="clientAddress" class="form-label">Dirección cliente</label>
+      <input type="text" name="clientAddress" id="clientAddress" class="form-control">
+    </div>
+    
   </form>
 
 
