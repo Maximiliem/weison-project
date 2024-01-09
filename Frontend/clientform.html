@@ -41,6 +41,7 @@
 
   <form class="row g-3">
     <h4>Formulario visita</h4>
+    <!--INICIO FORM 2-->
     <div class="col-md-4">
       <label for="inputName2" class="form-label">Nombre</label>
       <input type="text" class="form-control" id="inputName2">
@@ -52,6 +53,10 @@
     <div class="col-4">
       <label for="inputPhone2" class="form-label">Tel/cel</label>
       <input type="text" class="form-control" id="inputPhone2" placeholder="Ingrese su número de teléfono">
+    </div>
+    <div class="col-4">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="inputEmail2" placeholder="Introduzca su email">
     </div>
     <div class="col-4">
       <label for="inputDate2" class="form-label">Fecha de nacimiento</label>
@@ -66,8 +71,26 @@
       </select>
     </div>
     <br><br>  
+    <!--FIN FORM 2-->
+
+    <!--ACÁ VA EL FORM 3 EN DONDE LOS DATOS OBTENIDOS SON PARA RELLENAR LA HOJA DE VISITA EN PDF-->
+    <h4>Hoja de visita</h4>
+    <div class="col-4">
+      <label for="inputVisitDay2" class="form-label">Fecha de la visita</label>
+      <input type="date" class="form-control" id="inputVisitDay2">
+    </div> <!--Se podría hacer que tome la fecha del día que figura en el sistema operativo del dispositivo-->
+    <div class="col-4">
+      <label for="inputTimeIn2" class="form-label">Hora de entrada</label>
+      <input type="time" name="timeIn2" id="inputTimeIn2" class="form-control">
+    </div>
+    <div class="col-4">
+      <label for="inputTimeOut2" class="form-label">Hora de salida</label>
+      <input type="time" name="timeOut2" id="inputTimeOut2" class="form-control">
+    </div>
+
+
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-primary">Listo</button>
     </div>
   </form>
 
