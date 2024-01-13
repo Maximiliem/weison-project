@@ -14,7 +14,7 @@
 
   <header>
     <!--Acá va el NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Weisz Project</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,7 +25,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>        
+            </li>
             <li class="nav-item">
               <a class="nav-link active" href="clientform.html">Formulario visita</a>
             </li>
@@ -73,7 +73,7 @@
     <br>
     <!--FIN FORM 2-->
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Listo</button>
+      <button type="submit" class="btn btn-primary col-12">Listo</button>
     </div>
   </form>
   <br><br><br>
@@ -105,19 +105,47 @@
       <label for="inmuebleLocalidad" class="form-label">Localidad</label>
       <input type="text" name="inmuebleLocalidad" id="inmuebleLocalidad" class="form-control">
     </div>
-    <div class="col-4">
+    <div class="col-6">
       <label for="" class="form-label">Nombre completo</label>
-      <input type="" name="fullNameClient" id="fullNameClient" class="form-control"> <!--EL INPUT ESTE SE TOMA DE FORM 2-->
+      <input type="" name="fullNameClient" id="fullNameClient" class="form-control">
+      <!--EL INPUT ESTE SE TOMA DE FORM 2-->
     </div>
-    <div class="col-4">
-      <label for="clientAddress" class="form-label">Dirección cliente</label>
+    <div class="col-6">
+      <label for="clientAddress" class="form-label">Dirección del cliente</label>
       <input type="text" name="clientAddress" id="clientAddress" class="form-control">
     </div>
-    
+    <div class="col-6">
+      <label for="inputDNIType" class="form-label">Tipo de documento</label>
+      <select id="inputDNIType" class="form-select">
+        <option selected disabled hidden>Elija una opción...</option>
+        <option>DNI</option>
+        <option>C.I.</option>
+        <option>Pasaporte</option>
+      </select>
+    </div>
+    <div class="col-6">
+      <label for="clientDNI" class="form-label">Documento de identidad</label>
+      <input type="text" name="clientDNI" id="clientDNI" class="form-control">
+    </div>
+
+    <div class="col-6"> <!--LA INFO DE ACÁ SE TIENE QUE RELLENAR CON EL NOMBRE DEL AGENTE DE INDEX.HTML-->
+      <label for="agentName" class="form-label">Nombre del agente</label>
+      <input type="text" name="agentName" id="agentName" class="form-control">
+    </div>
+
+    <div class="col-6"> <!--EL PRECIO DE ACÁ SE VA A TOMAR EN LA PÁGINA 3-->
+      <label for="propertyPrice" class="form-label">Precio de la propeidad (en USD)</label>
+      <input type="number" min="0.00" name="propertyPrice" id="propertyPrice" class="form-control">
+    </div>
+    <br><br>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary col-12">Listo</button>
+    </div>
+
   </form>
 
 
-  
+
   <br>
   <footer>
     <p class="text-center">&copy; 2024 - Web desarrollada por Maximiliem</p>
