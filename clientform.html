@@ -11,7 +11,6 @@
 
 <body>
 
-
   <header>
     <!--Acá va el NAVBAR-->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -38,120 +37,122 @@
     </nav>
   </header>
 
+  <div class="container mt-4">
+    <form class="row g-3">
+      <div class="col-12">
+        <h4>Formulario visita</h4>
+      </div>
+      <!-- INICIO FORM 2 -->
+      <div class="col-md-6">
+        <label for="inputName2" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputName2">
+      </div>
+      <div class="col-md-6">
+        <label for="inputLastname2" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="inputLastname2">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPhone2" class="form-label">Tel/cel</label>
+        <input type="text" class="form-control" id="inputPhone2" placeholder="Ingrese su número de teléfono">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail2">Email</label>
+        <input type="email" class="form-control" id="inputEmail2" placeholder="Introduzca su email">
+      </div>
+      <div class="col-md-6">
+        <label for="inputDate2" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="inputDate2">
+      </div>
+      <div class="col-md-6">
+        <label for="inputInfo2" class="form-label">Por dónde recibe información</label>
+        <select id="inputInfo2" class="form-select">
+          <option selected disabled hidden>Elija una opción...</option>
+          <option>WhatsApp</option>
+          <option>Mail</option>
+        </select>
+      </div>
 
-  <form class="row g-3">
-    <h4>Formulario visita</h4>
-    <!--INICIO FORM 2-->
-    <div class="col-4">
-      <label for="inputName2" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="inputName2">
-    </div>
-    <div class="col-4">
-      <label for="inputLastname2" class="form-label">Apellido</label>
-      <input type="text" class="form-control" id="inputLastname2">
-    </div>
-    <div class="col-4">
-      <label for="inputPhone2" class="form-label">Tel/cel</label>
-      <input type="text" class="form-control" id="inputPhone2" placeholder="Ingrese su número de teléfono">
-    </div>
-    <div class="col-4">
-      <label for="inputEmail2">Email</label>
-      <input type="email" class="form-control" id="inputEmail2" placeholder="Introduzca su email">
-    </div>
-    <div class="col-4">
-      <label for="inputDate2" class="form-label">Fecha de nacimiento</label>
-      <input type="date" class="form-control" id="inputDate2">
-    </div>
-    <div class="col-4">
-      <label for="inputInfo2" class="form-label">Por dónde recibe información</label>
-      <select id="inputInfo2" class="form-select">
-        <option selected disabled hidden>Elija una opción...</option>
-        <option>WhatsApp</option>
-        <option>Mail</option>
-      </select>
-    </div>
-    <br>
-    <!--FIN FORM 2-->
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary col-12">Listo</button>
-    </div>
-  </form>
-  <br><br><br>
+      <!-- FIN FORM 2 -->
 
-  <form class="row g-3">
-    <!--ACÁ VA EL FORM 3 EN DONDE LOS DATOS OBTENIDOS SON PARA RELLENAR LA HOJA DE VISITA EN PDF-->
-    <h4>Hoja de visita</h4>
-    <div class="col-4">
-      <label for="inputVisitDay2" class="form-label">Fecha de la visita</label>
-      <input type="date" class="form-control " id="inputVisitDay2">
-    </div> <!--Se podría hacer que tome la fecha del día que figura en el sistema operativo del dispositivo-->
-    <div class="col-4">
-      <label for="inputTimeIn2" class="form-label">Hora de entrada</label>
-      <input type="time" name="timeIn2" id="inputTimeIn2" class="form-control">
-    </div>
-    <div class="col-4">
-      <label for="inputTimeOut2" class="form-label">Hora de salida</label>
-      <input type="time" name="timeOut2" id="inputTimeOut2" class="form-control">
-    </div>
-    <div class="col-4">
-      <label for="" class="form-label">Dirección del inmueble</label>
-      <input type="" name="inmuebleAddress" id="inmuebleAddress" class="form-control">
-    </div>
-    <div class="col-4">
-      <label for="inmuebleZone" class="form-label">Zona</label>
-      <input type="text" name="inmuebleZone" id="inmuebleZone" class="form-control">
-    </div>
-    <div class="col-4">
-      <label for="inmuebleLocalidad" class="form-label">Localidad</label>
-      <input type="text" name="inmuebleLocalidad" id="inmuebleLocalidad" class="form-control">
-    </div>
-    <div class="col-6">
-      <label for="" class="form-label">Nombre completo</label>
-      <input type="" name="fullNameClient" id="fullNameClient" class="form-control">
-      <!--EL INPUT ESTE SE TOMA DE FORM 2-->
-    </div>
-    <div class="col-6">
-      <label for="clientAddress" class="form-label">Dirección del cliente</label>
-      <input type="text" name="clientAddress" id="clientAddress" class="form-control">
-    </div>
-    <div class="col-6">
-      <label for="inputDNIType" class="form-label">Tipo de documento</label>
-      <select id="inputDNIType" class="form-select">
-        <option selected disabled hidden>Elija una opción...</option>
-        <option>DNI</option>
-        <option>C.I.</option>
-        <option>Pasaporte</option>
-      </select>
-    </div>
-    <div class="col-6">
-      <label for="clientDNI" class="form-label">Documento de identidad</label>
-      <input type="text" name="clientDNI" id="clientDNI" class="form-control">
-    </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary col-12">Listo</button>
+      </div>
+    </form>
 
-    <div class="col-6"> <!--LA INFO DE ACÁ SE TIENE QUE RELLENAR CON EL NOMBRE DEL AGENTE DE INDEX.HTML-->
-      <label for="agentName" class="form-label">Nombre del agente</label>
-      <input type="text" name="agentName" id="agentName" class="form-control">
-    </div>
+    <form class="row g-3 mt-4">
+      <!-- ACÁ VA EL FORM 3 EN DONDE LOS DATOS OBTENIDOS SON PARA RELLENAR LA HOJA DE VISITA EN PDF -->
+      <div class="col-12">
+        <h4>Hoja de visita</h4>
+      </div>
+      <div class="col-md-6">
+        <label for="inputVisitDay2" class="form-label">Fecha de la visita</label>
+        <input type="date" class="form-control" id="inputVisitDay2">
+      </div> <!-- Se podría hacer que tome la fecha del día que figura en el sistema operativo del dispositivo -->
+      <div class="col-md-6">
+        <label for="inputTimeIn2" class="form-label">Hora de entrada</label>
+        <input type="time" name="timeIn2" id="inputTimeIn2" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="inputTimeOut2" class="form-label">Hora de salida</label>
+        <input type="time" name="timeOut2" id="inputTimeOut2" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="" class="form-label">Dirección del inmueble</label>
+        <input type="" name="inmuebleAddress" id="inmuebleAddress" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="inmuebleZone" class="form-label">Zona</label>
+        <input type="text" name="inmuebleZone" id="inmuebleZone" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="inmuebleLocalidad" class="form-label">Localidad</label>
+        <input type="text" name="inmuebleLocalidad" id="inmuebleLocalidad" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="" class="form-label">Nombre completo</label>
+        <input type="" name="fullNameClient" id="fullNameClient" class="form-control">
+        <!-- EL INPUT ESTE SE TOMA DE FORM 2 -->
+      </div>
+      <div class="col-md-6">
+        <label for="clientAddress" class="form-label">Dirección del cliente</label>
+        <input type="text" name="clientAddress" id="clientAddress" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="inputDNIType" class="form-label">Tipo de documento</label>
+        <select id="inputDNIType" class="form-select">
+          <option selected disabled hidden>Elija una opción...</option>
+          <option>DNI</option>
+          <option>C.I.</option>
+          <option>Pasaporte</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="clientDNI" class="form-label">Documento de identidad</label>
+        <input type="text" name="clientDNI" id="clientDNI" class="form-control">
+      </div>
 
-    <div class="col-6"> <!--EL PRECIO DE ACÁ SE VA A TOMAR EN LA PÁGINA 3-->
-      <label for="propertyPrice" class="form-label">Precio de la propeidad (en USD)</label>
-      <input type="number" min="0.00" name="propertyPrice" id="propertyPrice" class="form-control">
-    </div>
-    <br><br>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary col-12">Listo</button>
-    </div>
+      <div class="col-md-6"> <!-- LA INFO DE ACÁ SE TIENE QUE RELLENAR CON EL NOMBRE DEL AGENTE DE INDEX.HTML -->
+        <label for="agentName" class="form-label">Nombre del agente</label>
+        <input type="text" name="agentName" id="agentName" class="form-control">
+      </div>
 
-  </form>
+      <div class="col-md-6"> <!-- EL PRECIO DE ACÁ SE VA A TOMAR EN LA PÁGINA 3 -->
+        <label for="propertyPrice" class="form-label">Precio de la propiedad (en USD)</label>
+        <input type="number" min="0.00" name="propertyPrice" id="propertyPrice" class="form-control">
+      </div>
+      <div class="col-12 mt-4">
+        <button type="submit" class="btn btn-primary col-12">Listo</button>
+      </div>
 
+    </form>
+  </div>
 
-
-  <br>
-  <footer>
+  <footer class="mt-4">
     <p class="text-center">&copy; 2024 - Web desarrollada por Maximiliem</p>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-e4H3JzQjrSQYVFa71eT51zZXaOrlTXiU3SkgHEW0xDZ5C14MMzsHHRcsXe8k3l6j" crossorigin="anonymous"></script>
 </body>
 
 </html>
