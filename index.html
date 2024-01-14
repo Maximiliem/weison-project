@@ -1,119 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weisz Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weisz Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    
-    <header>
-        <!--Acá va el NAVBAR-->
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand">Weisz Project</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="clientform.html">Formulario visita</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="thirdpage.html">Listado</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
 
-    <!--Acá va el Form 1-->
-    <div class="container mt-4">
-      <form class="row g-3" action="">
-        <div class="col-md-6">
-          <label for="inputAgentName" class="form-label h4">Nombre del agente</label>
-          <input type="text" class="form-control" id="inputAgentName" placeholder="Weisz Rubianes">
+  <header>
+    <!--Acá va el NAVBAR-->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand">Weisz Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientform.html">Formulario visita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thirdpage.html">Listado</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Acá va el Form 1-->
+  <div class="container mt-4">
+    <form class="row g-3" action="">
+      <div class="col-md-6">
+        <label for="inputAgentName" class="form-label h4">Nombre del agente</label>
+        <input type="text" class="form-control" id="inputAgentName" placeholder="Weisz Rubianes">
+      </div>
+
+      <div class="col-md-6">
+        <h3>Datos del inmueble</h3>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputDormitorio1" class="form-label">Dormitorios</label>
+        <input type="number" class="form-control" id="inputDormitorio1" placeholder="Cantidad de dormitorios">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputCocina1" class="form-label">Cocina</label>
+        <input type="number" class="form-control" id="inputCocina1" placeholder="Cantidad de cocinas">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputLiving1" class="form-label">Living</label>
+        <input type="number" class="form-control" id="inputLiving1" placeholder="Cantidad de livings">
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputPatios1" class="form-label">Patios</label>
+        <input type="number" class="form-control" id="inputPatios1" placeholder="Cantidad de patios">
+      </div>
+
+      <div class="col-md-2 mt-md-5" id="frenteFondo">
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheckFrente">
+          <label class="form-check-label" for="gridCheckFrente">
+            Frente
+          </label>
         </div>
 
-        <div class="col-md-6">
-          <h3>Datos del inmueble</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheckFondo">
+          <label class="form-check-label" for="gridCheckFondo">
+            Fondo
+          </label>
         </div>
 
-        <div class="col-md-6">
-          <label for="inputDormitorio1" class="form-label">Dormitorios</label>
-          <input type="number" class="form-control" id="inputDormitorio1" placeholder="Cantidad de dormitorios">
-        </div>
+      </div>
 
-        <div class="col-md-6">
-          <label for="inputCocina1" class="form-label">Cocina</label>
-          <input type="number" class="form-control" id="inputCocina1" placeholder="Cantidad de cocinas">
-        </div>
-        
-        <div class="col-md-6">
-          <label for="inputLiving1" class="form-label">Living</label>
-          <input type="number" class="form-control" id="inputLiving1" placeholder="Cantidad de livings">
-        </div>
 
-        <div class="col-md-6">
-          <label for="inputPatios1" class="form-label">Patios</label>
-          <input type="number" class="form-control" id="inputPatios1" placeholder="Cantidad de patios">
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheckFrente">
-            <label class="form-check-label" for="gridCheckFrente">
-              Frente
-            </label>
-          </div>
-        </div>
+      <div class="col-md-6">
+        <label for="inputCocheras1" class="form-label">Cocheras</label>
+        <input type="number" class="form-control" id="inputCocheras1" placeholder="Cantidad de cocheras">
+      </div>
 
-        <div class="col-md-6">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheckFondo">
-            <label class="form-check-label" for="gridCheckFondo">
-              Fondo
-            </label>
-          </div>
-        </div>
+      <div class="col-md-6">
+        <label for="inputBaños1" class="form-label">Baños</label>
+        <input type="number" class="form-control" id="inputBaños1" placeholder="Cantidad de baños">
+      </div>
 
-        <div class="col-md-6">
-          <label for="inputCocheras1" class="form-label">Cocheras</label>
-          <input type="number" class="form-control" id="inputCocheras1" placeholder="Cantidad de cocheras">
-        </div>
+      <div class="col-md-12">
+        <label for="inputAdress1" class="form-label">Dirección del inmueble</label>
+        <input type="text" class="form-control" id="inputAdress1" placeholder="Ej. Av. Brasil 3008">
+      </div>
 
-        <div class="col-md-6">
-          <label for="inputBaños1" class="form-label">Baños</label>
-          <input type="number" class="form-control" id="inputBaños1" placeholder="Cantidad de baños">
-        </div>
+      <div class="col-md-6"> <!-- EL PRECIO DE ACÁ SE VA A TOMAR EN LA PÁGINA 3 -->
+        <label for="propertyPrice" class="form-label">Precio de la propiedad (en USD)</label>
+        <input type="number" min="0.00" name="propertyPrice" id="propertyPrice" class="form-control">
+      </div>
 
-        <div class="col-md-12">
-          <label for="inputAdress1" class="form-label">Dirección del inmueble</label>
-          <input type="text" class="form-control" id="inputAdress1" placeholder="Ej. Av. Brasil 3008">
-        </div>
+      <div class="col-md-12 mt-4">
+        <button type="submit" class="btn btn-primary col-12">Listo</button>
+      </div>
+    </form>
+  </div>
 
-        <div class="col-md-6"> <!-- EL PRECIO DE ACÁ SE VA A TOMAR EN LA PÁGINA 3 -->
-          <label for="propertyPrice" class="form-label">Precio de la propiedad (en USD)</label>
-          <input type="number" min="0.00" name="propertyPrice" id="propertyPrice" class="form-control">
-        </div>
+  <footer class="mt-4">
+    <p class="text-center">&copy; 2024 - Web desarrollada por Maximiliem</p>
+  </footer>
 
-        <div class="col-md-12 mt-4">
-          <button type="submit" class="btn btn-primary col-12">Listo</button>
-        </div>
-      </form>
-    </div>
-
-    <footer class="mt-4">
-        <p class="text-center">&copy; 2024 - Web desarrollada por Maximiliem</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="Frontend/js/pickAgentNameInput.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="Frontend/js/pickAgentNameInput.js"></script>
 </body>
+
 </html>
